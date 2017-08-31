@@ -6,15 +6,17 @@ Prerenders all math equations over an entire HTML string using [MathJax](https:/
 
 ```js
 /**
+ * Parses an HTML string and prerenders all math equations using MathJax.
+ *
  * @param {String} htmlString - HTML string to process.
  * @param {Object} [options] - Options for [`mathjax-node`](https://www.npmjs.com/package/mathjax-node)'s 
  *                             `./lib/mj-page.js`. If false, MathJax will be 
  *                             disabled.
- * @param {Function} done - Method invoked when prerendering completes or fails. 
- *                          The error (if any) will be the first param and the 
- *                          output HTML string will be the second param.
+ *
+ * @return {Promise<String>} - Promise with the output HTML string as the 
+ *                             fulfillment value.
  */
-function mathjaxDOM(htmlString, options, done)
+function mathjaxDOM(htmlString, options)
 ```
 
 ## Usage
@@ -26,11 +28,14 @@ Example:
 ```js
 const mathjaxDOM = require('mathjax-dom');
 
-mathjaxDOM(`<some_html>`, {}, (error, htmlString) => {
-  if (error) throw error;
-
-  // The output HTML string with all math equations prerendered.
-  console.log(htmlString);
+mathjaxDOM(`<some_html>`, {})
+  .then(htmlString => {
+    // The output HTML string with all math equations prerendered.
+    console.log(htmlString);
+  })
+  .catch(err => {
+    throw err;
+  });
 });
 ```
 
