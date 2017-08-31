@@ -1,6 +1,6 @@
 {
   "name": "mathjax-dom",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "MathJax prerenderer for HTML strings",
   "main": "index.js",
   "repository": {
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
+    "jsdom": "^11.2.0",
     "mathjax-node": "^0.5.1"
   }
 }
