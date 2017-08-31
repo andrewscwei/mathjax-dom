@@ -1,0 +1,22 @@
+{
+  "name": "mathjax-dom",
+  "version": "0.1.0",
+  "description": "MathJax prerenderer for HTML strings",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewscwei/mathjax-dom.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet... :)\""
+  },
+  "author": "Andrew Wei",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "mathjax-node": "^0.5.1"
+  }
+}
