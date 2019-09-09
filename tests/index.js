@@ -22,7 +22,6 @@ describe('mathjax-dom', () => {
     mathjaxDOM(htmlString)
       .then(html => {
         assert(html.startsWith('<!DOCTYPE html>'));
-        console.log(html);
         done();
       });
   });
