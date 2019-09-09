@@ -1,4 +1,4 @@
-# mathjax-dom [![npm](https://img.shields.io/npm/v/mathjax-dom.svg)](https://www.npmjs.com/package/mathjax-dom) [![CircleCI](https://img.shields.io/circleci/build/github/andrewscwei/mathjax-dom.svg)](https://circleci.com/gh/andrewscwei/mathjax-dom)
+# mathjax-dom [![](https://img.shields.io/github/license/andrewscwei/mathjax-dom)](https://github.com/andrewscwei/mathjax-dom/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/mathjax-dom.svg)](https://www.npmjs.com/package/mathjax-dom) [![CircleCI](https://img.shields.io/circleci/build/github/andrewscwei/mathjax-dom.svg)](https://circleci.com/gh/andrewscwei/mathjax-dom)
 
 Prerenders all math equations over an entire HTML string using [MathJax](https://www.mathjax.org/).
 
