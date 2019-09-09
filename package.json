@@ -1,6 +1,6 @@
 {
   "name": "mathjax-dom",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "MathJax prerenderer for HTML strings",
   "main": "index.js",
   "repository": {
@@ -11,13 +11,17 @@
     "index.js"
   ],
   "scripts": {
-    "test": "echo \"No tests yet... :)\""
+    "test": "mocha --exit --recursive --reporter spec tests",
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "Andrew Wei",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.1.0",
-    "jsdom": "^11.2.0",
-    "mathjax-node": "^0.5.1"
+    "mathjax-node-page": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "mocha": "^6.2.0"
   }
 }
